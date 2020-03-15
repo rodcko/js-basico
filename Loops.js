@@ -14,3 +14,8 @@ for (var estudiante of estudiantes){
     saludarEstudiantes(estudiante);
 }
 
+// Ejemplo 3 (While)
+while(estudiantes.length > 0){
+    var estudiante = estudiantes.shift();
+    saludarEstudiantes(estudiante);
+}
