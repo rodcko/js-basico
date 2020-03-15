@@ -1,3 +1,4 @@
+// ********** VERSIÓN ELSE IF **********
 // Declaración de variable, que va almacenar la opción de la máquina, generada aleatoriamente
 var optMachine;
 
@@ -39,8 +40,7 @@ optUser = optUser.toUpperCase();
 // Manda a llamar la función para que se ejecute el juego y envía como parametros las opciones de cada jugador
 gamePiedraPapelTijera(optUser, optMachine);
 
-
-
+// ********** VERSIÓN SWITCH **********
 
 
 
