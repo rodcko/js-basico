@@ -60,3 +60,4 @@ articulos.forEach(function(articulo){
 var articulosBaratos = articulos.some(function(articulo){
     return articulo.costo <= 700;
 });
+
