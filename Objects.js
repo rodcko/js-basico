@@ -45,3 +45,18 @@ var articulosFiltrados = articulos.filter(function(articulo){
 var nombreArticulos = articulos.map(function(articulo){
     return articulo.nombre
 });
+
+// Metodo find, no modifica el arreglo original, crea un nuevo array y va a buscar un articulo del arreglo, y si lo encuentra lo regresa (return) de acuerdo a una propiedad en especifico (nombre)
+var encuentraArticulo = articulos.find(function(articulo){
+    return articulo.nombre === "Laptop"
+});
+
+// Metodo forEach, no crea un array adiconal, sino que modifica el original
+articulos.forEach(function(articulo){
+    console.log(articulo.nombre);
+});
+
+// Metodo some, nos regresa una validación de true/false para articulos que cumplan la validación, se crea un nuevo array, nos devuelve un boolen de true o false si se cumple la condición
+var articulosBaratos = articulos.some(function(articulo){
+    return articulo.costo <= 700;
+});
